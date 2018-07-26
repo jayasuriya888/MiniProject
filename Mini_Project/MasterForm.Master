@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterForm.master.cs" Inherits="Mini_Project.MasterForm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 170px;
+            text-align: center;
+            font-size: larger;
+        }
+        .auto-style2 {
+            width: 100%;
+            height: 167px;
+            border: 3px solid #000080;
+            background-color: #00ffff;
+        }
+        .auto-style3 {
+            width: 230px;
+            height: 10px;
+        }
+        .auto-style4 {
+            height: 10px;
+            font-size: xx-large;
+        }
+        .auto-style5 {
+            width: 205px;
+            height: 153px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div style ="background-color:red" class="auto-style1">
+
+            <table cellspacing="4" class="auto-style2">
+                <tr>
+                    <td class="auto-style3">
+                        <img class="auto-style5" src="Images/image%2001.png" /></td>
+                    <td class="auto-style4" style="font-weight: 800; font-family: 'Baskerville Old Face'">Cessena Business Tech Park<br />
+                        Visitor Monitoring</td>
+                    <td>
+                        <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="False" Height="47px" ImageUrl="~/Images/image02.png" OnClick="ImageButton1_Click" Width="58px" />
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    <div style="background-color: #0000FF">
+            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+     </div>
+    </form>
+</body>
+</html>
